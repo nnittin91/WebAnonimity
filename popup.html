@@ -1,0 +1,37 @@
+<html class="light-blue darken-3">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<nav>
+    <div class="row   white nav-wrapper  valign-wrapper">
+        <h5 class="col light-blue-text text-darken-3  offset-l2 center-align">Who am I?</h5>
+    </div>
+</nav>
+
+<br>
+
+<div class="container" >  
+    <div class="row"> 
+        <div class="col offset-l2 l8">
+            
+            <form action="localhost:5000/search" method="get" id="searchForm">
+                <h6 class="white-text">Anonymous Search</h6>
+                <input id="query" type="text" name="query" class="white-text"><br>
+            </form> 
+
+            <div class="center center-align">
+                <button id="button" type="button" class="white light-blue-text text-darken-3 center-align waves-effect waves-light btn">Submit</button>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <script src="submit.js"></script>
+    
+        
+        <br>
+</div>
+
+</html>

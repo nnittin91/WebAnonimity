@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Who am I",
+  "version": "1.0",
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "permissions": [
+    "tabs", "<all_urls>", "webNavigation",  "webRequest", "cookies"
+  ],
+ 
+  
+  "background": {
+    "scripts": ["background.js", "submit.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "tab-icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js" : ["jquery.js"]
+    }
+  ]
+
+}
